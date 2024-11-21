@@ -7,7 +7,8 @@
     <title>Bootstrap</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- Navbar content -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,38 +22,52 @@
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
             </div>
           </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
-    <div class="container">
+    </nav>
+    <!-- Navbar content -->
+
+    <div class="container mt-5">
         <h1>Welcome to Bootstrap</h1>
-        <div class="container text-center border text-light bg-primary">
-            <div class="row">
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-            </div>
-            <div class="row">
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
-            </div>
+        <div class="container my-5">
+          <div class="container text-center border text-light">
+              <div class="row ">
+                  <div class="col mb-2 me-5 bg-primary">Column1</div>
+                  <div class="col mb-2 me-5 bg-primary">Column1</div>
+                  <div class="col mb-2 me-5 bg-primary">Column1</div>
+              </div>
+              <div class="row">
+                  <div class="col text-primary">Column</div>
+                  <div class="col-6 bg-dark">Column</div>
+                  <div class="col text-primary">Column</div>
+              </div>
+          </div>
+          <div class="container text-center">
+              <div class="row gx-5">
+                <div class="col border bg-danger text-light">Column</div>                  
+                <div class="col border bg-danger text-light">Column</div>                  
+                <div class="col border bg-danger text-light">Column</div>                  
+              </div>
+          </div>
         </div>
-        <div class="container text-center">
-            <div class="row">
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
-              <div class="col">
-                Column
-              </div>
+        <div class="container px-4 text-center">
+          <div class="row gx-5 mb-5">
+            <div class="col border">
+             <div class="p-3">Custom column padding</div>
             </div>
+            <div class="col border">
+              <div class="p-3">Custom column padding</div>
+            </div>
+          </div>
         </div>
-        <a type="button" class="btn btn-primary collapsed" data-bs-toggle="collapse" data-bs-target="#ptext">Hide</a>
-        <p id="ptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quisquam.</p>
-        <div class="card" style="width: 18rem;">
+        <div class="container mb-5">
+          <a type="button" class="btn btn-primary collapsed" data-bs-toggle="collapse" data-bs-target="#ptext">Hide</a>
+          <p id="ptext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, quisquam.</p>
+        </div>
+        <div class="card mb-5 shadow" style="width: 18rem;">
             <img src="..." class="card-img-top" class="placeholder" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -61,7 +76,7 @@
             </div>
         </div>
         
-        <div class="card" aria-hidden="true">
+        <div class="card mb-5 shadow" aria-hidden="true">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title placeholder-glow">
@@ -102,6 +117,43 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <h2>Forms</h2>
+            <form class="mb-5">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          
+    </div>
+    <div class="container-fluid bg-primary text-light p-5">
+      <div class="row">
+        <div class="col">
+          <h2>Footer</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, voluptate!</p>
+        </div>
+        <div class="col">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
+      
+    
+
     </div>
 
    
