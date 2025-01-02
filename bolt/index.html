@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="/src/styles/main.scss">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="/">SocialApp</a>
+        <div class="navbar-nav ms-auto" id="navbarContent">
+          <button class="btn btn-outline-light me-2" id="registerBtn">Register</button>
+          <button class="btn btn-outline-light" id="loginBtn">Login</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <div id="mainContent"></div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" required>
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label for="regUsername" class="form-label">Username</label>
+                <input type="text" class="form-control" id="regUsername" required>
+              </div>
+              <div class="mb-3">
+                <label for="regName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="regName" required>
+              </div>
+              <div class="mb-3">
+                <label for="regPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="regPassword" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

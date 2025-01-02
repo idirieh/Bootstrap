@@ -1,0 +1,19 @@
+:root {
+    /* colors */
+    --clr-primary-blue: #002E5D;
+    --clr-primary-grey: #606060;
+    --clr-secondary-orange: #FF8C42;
+    --clr-secondary-grey: #4682B4;
+}
+
+
+.navbar-custom {
+    background-color: #007bff; /* Blue color */
+}
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #fff; /* White text for better contrast */
+}
+.navbar-custom .nav-link:hover {
+    color: #d1e8ff; /* Light blue on hover */
+}

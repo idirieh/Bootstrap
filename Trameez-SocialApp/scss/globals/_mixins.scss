@@ -1,0 +1,16 @@
+@mixin btn-mx($clr: black, $bg: white, $hov: lightblue) {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0.5em 1em;
+    color: $clr;
+    background-color: $bg;
+    border-radius: 5px;
+  
+    &:hover,
+    &:focus {
+      background: $hov;
+    }
+  }
+  

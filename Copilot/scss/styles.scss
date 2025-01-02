@@ -1,0 +1,24 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+#post-feed .post {
+    margin-bottom: 20px;
+}
+
+#post-feed .post img {
+    max-width: 100%;
+    height: auto;
+}
+
+#profile-info .profile-picture img {
+    border-radius: 50%;
+}

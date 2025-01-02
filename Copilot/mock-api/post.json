@@ -1,0 +1,16 @@
+[
+    {
+        "userId": 1,
+        "userName": "John Doe",
+        "profilePicture": "images/profile1.jpg",
+        "content": "Beautiful day!",
+        "image": "images/post1.jpg"
+    },
+    {
+        "userId": 2,
+        "userName": "Jane Doe",
+        "profilePicture": "images/profile2.jpg",
+        "content": "Enjoying my vacation!",
+        "image": "images/post2.jpg"
+    }
+]
